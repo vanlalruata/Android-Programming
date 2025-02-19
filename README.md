@@ -43,6 +43,6 @@ This repository is continuously updated. Contributions, suggestions, and feedbac
 
 ## Let me know if you’d like any modifications!
 
-## Compactability
+## Compatibility
 https://docs.gradle.org/current/userguide/compatibility.html
 
