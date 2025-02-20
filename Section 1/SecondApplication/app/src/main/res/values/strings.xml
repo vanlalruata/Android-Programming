@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Second Application</string>
+    <string name="full_name">Full Name</string>
+    <string name="date_of_birth_click_to_select">Date of Birth (Click to Select)</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="address">Address</string>
+    <string name="submit">Submit</string>
+</resources>
