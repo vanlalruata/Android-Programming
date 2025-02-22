@@ -21,7 +21,7 @@ No Material Design components are used—this is a beginner-friendly tutorial fo
 ├── 📁 app
 │   ├── 📁 src
 │   │   ├── 📁 main
-│   │   │   ├── 📁 java/com/example/formsubmission
+│   │   │   ├── 📁 java/com/mzu/secondapplication
 │   │   │   │   ├── MainActivity.java  # Main logic for handling form and sending data to WhatsApp
 │   │   │   ├── 📁 res
 │   │   │   │   ├── 📁 layout
