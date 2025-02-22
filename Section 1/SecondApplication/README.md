@@ -1,7 +1,5 @@
 # Simple Android Form Submission to WhatsApp
 
-## Android Studio Java Tutorial for Beginners
-
 ### Watch the YouTube Tutorial Here: https://youtu.be/BZXNTvPwtO4
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/BZXNTvPwtO4/0.jpg)](https://www.youtube.com/watch?v=BZXNTvPwtO4)
 
