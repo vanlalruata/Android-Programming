@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sudoku_background"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/difficultySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/difficulty_levels"
+        android:spinnerMode="dropdown"/>
+
+    <com.mzu.sudoku.SudokuBoardView
+        android:id="@+id/sudokuBoard"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_1"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="1"/>
+
+        <Button
+            android:id="@+id/btn_2"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="2"/>
+
+        <Button
+            android:id="@+id/btn_3"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="3"/>
+
+        <Button
+            android:id="@+id/btn_4"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="4"/>
+
+        <Button
+            android:id="@+id/btn_5"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="5"/>
+
+        <Button
+            android:id="@+id/btn_6"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="6"/>
+
+        <Button
+            android:id="@+id/btn_7"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="7"/>
+
+        <Button
+            android:id="@+id/btn_8"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="8"/>
+
+        <Button
+            android:id="@+id/btn_9"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="9"/>
+
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="C"/>
+    </LinearLayout>
+</LinearLayout>
