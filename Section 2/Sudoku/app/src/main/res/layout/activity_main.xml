@@ -28,67 +28,144 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:gravity="center">
 
-        <Button
-            android:id="@+id/btn_1"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:text="1"/>
+        <!-- Control Buttons -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="8dp">
 
-        <Button
-            android:id="@+id/btn_2"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:text="2"/>
+            <Button
+                android:id="@+id/btn_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Game"
+                android:backgroundTint="@color/control_button"
+                android:textColor="@color/button_text"
+                android:layout_marginEnd="8dp"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
 
-        <Button
-            android:id="@+id/btn_3"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:text="3"/>
+            <Button
+                android:id="@+id/btn_erase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Erase"
+                android:backgroundTint="@color/control_button"
+                android:textColor="@color/button_text"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+        </LinearLayout>
 
-        <Button
-            android:id="@+id/btn_4"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:text="4"/>
+        <!-- Number Pad -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:divider="@drawable/divider"
+            android:showDividers="middle">
 
-        <Button
-            android:id="@+id/btn_5"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:text="5"/>
+            <TextView
+                android:id="@+id/btn_1"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/user_number"
+                android:textSize="20sp"
+                android:clickable="true"
+                android:focusable="true"/>
 
-        <Button
-            android:id="@+id/btn_6"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:text="6"/>
+            <TextView
+                android:id="@+id/btn_2"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="@color/user_number"
+                android:textSize="20sp"
+                android:clickable="true"
+                android:focusable="true"/>
 
-        <Button
-            android:id="@+id/btn_7"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:text="7"/>
+            <TextView
+                android:id="@+id/btn_3"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="@color/user_number"
+                android:textSize="20sp"
+                android:clickable="true"
+                android:focusable="true"/>
 
-        <Button
-            android:id="@+id/btn_8"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:text="8"/>
+            <TextView
+                android:id="@+id/btn_4"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:gravity="center"
+                android:text="4"
+                android:textColor="@color/user_number"
+                android:textSize="20sp"
+                android:clickable="true"
+                android:focusable="true"/>
 
-        <Button
-            android:id="@+id/btn_9"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:text="9"/>
+            <TextView
+                android:id="@+id/btn_5"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:gravity="center"
+                android:text="5"
+                android:textColor="@color/user_number"
+                android:textSize="20sp"
+                android:clickable="true"
+                android:focusable="true"/>
 
-        <Button
-            android:id="@+id/btn_clear"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:text="C"/>
+            <TextView
+                android:id="@+id/btn_6"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:gravity="center"
+                android:text="6"
+                android:textColor="@color/user_number"
+                android:textSize="20sp"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <TextView
+                android:id="@+id/btn_7"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:gravity="center"
+                android:text="7"
+                android:textColor="@color/user_number"
+                android:textSize="20sp"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <TextView
+                android:id="@+id/btn_8"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:gravity="center"
+                android:text="8"
+                android:textColor="@color/user_number"
+                android:textSize="20sp"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <TextView
+                android:id="@+id/btn_9"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:gravity="center"
+                android:text="9"
+                android:textColor="@color/user_number"
+                android:textSize="20sp"
+                android:clickable="true"
+                android:focusable="true"/>
+        </LinearLayout>
     </LinearLayout>
 </LinearLayout>

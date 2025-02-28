@@ -15,4 +15,7 @@
     <color name="highlight_cell">#E3F2FD</color>
     <color name="thin_line">#BDBDBD</color>
     <color name="bold_line">#212121</color>
+
+    <color name="control_button">#4CAF50</color>
+    <color name="button_text">#FFFFFF</color>
 </resources>

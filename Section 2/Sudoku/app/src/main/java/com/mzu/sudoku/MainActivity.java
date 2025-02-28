@@ -1,11 +1,13 @@
 package com.mzu.sudoku;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -39,12 +41,22 @@ public class MainActivity extends AppCompatActivity {
     private void setupNumberButtons() {
         for (int i = 1; i <= 9; i++) {
             int buttonId = getResources().getIdentifier("btn_" + i, "id", getPackageName());
-            Button btn = findViewById(buttonId);
+            TextView btn = findViewById(buttonId);
             final int number = i;
             btn.setOnClickListener(v -> sudokuBoard.setNumber(number));
+
+            // Add ripple effect programmatically
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                btn.setForeground(getResources().getDrawable(R.drawable.ripple_effect));
+            }
         }
 
-        findViewById(R.id.btn_clear).setOnClickListener(v -> sudokuBoard.setNumber(0));
+        findViewById(R.id.btn_erase).setOnClickListener(v -> sudokuBoard.setNumber(0));
+        findViewById(R.id.btn_clear).setOnClickListener(v -> {
+            String difficulty = ((Spinner)findViewById(R.id.difficultySpinner))
+                    .getSelectedItem().toString();
+            generateNewPuzzle(difficulty);
+        });
     }
 
     private void setupDifficultySpinner() {
