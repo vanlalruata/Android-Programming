@@ -7,9 +7,9 @@
 This code focuses on upgrading form UI using Material Design in Android Studio with Java. The previous basic form is now designed with a modern, stylish UI using Material Components. This tutorial is part of the Basic UI Section for Android beginners.
 
 ## eatures
-* TextInputLayout & EditText - Enhanced input fields
-* MaterialButton - Styled submit button
-* RadioGroup & RadioButton - Custom-styled gender selection
+* ```TextInputLayout``` & ```EditText``` - Enhanced input fields
+* ```MaterialButton``` - Styled submit button
+* ```RadioGroup``` & ```RadioButton``` - Custom-styled gender selection
 * Improved UI with Theming - Consistent Material Design colors
 
 ## How It Works

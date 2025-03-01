@@ -1,0 +1,5 @@
+<com.github.badoualy.stepperindicator.StepperIndicator
+    android:id="@+id/stepper"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:stepCount="3"/>

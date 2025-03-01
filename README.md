@@ -24,7 +24,7 @@ The repository is divided into sections, making it easier to navigate through di
 
 ## How to Use This Repository
     1. Clone or download the repository:
-    > git clone https://github.com/vanlalruata/Android-Programming.git
+    ```git clone https://github.com/vanlalruata/Android-Programming.git```
 
     2. Navigate to different sections and follow the examples.
     3. Implement the examples on Android Studio to get hands-on experience.

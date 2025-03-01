@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select your favorite programming languages:"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:selectionRequired="false"
+        app:singleSelection="false">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipJava"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Java"
+            app:checkable="true"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipKotlin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kotlin"
+            app:checkable="true"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipPython"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Python"
+            app:checkable="true"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipCpp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C++"
+            app:checkable="true"/>
+    </com.google.android.material.chip.ChipGroup>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnShowSelection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Selection"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/tvSelected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selected Languages: "
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>

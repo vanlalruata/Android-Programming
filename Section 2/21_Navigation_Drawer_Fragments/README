@@ -1,0 +1,7 @@
+## Navigation Drawer with Fragments
+
+* Concepts: ```DrawerLayout```, ```NavigationView```, ```Fragments```.
+* Feature: A side menu for navigation.
+
+### Create Menu (```res/menu/drawer_menu.xml```)
+

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- 1. LinearLayout Example -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. LinearLayout"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:background="#E0E0E0">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Left"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="Right"/>
+        </LinearLayout>
+
+        <!-- 2. RelativeLayout Example -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. RelativeLayout"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#FFE0B2">
+
+            <Button
+                android:id="@+id/buttonCenter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Center"
+                android:layout_centerInParent="true"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Right of Center"
+                android:layout_toRightOf="@id/buttonCenter"
+                android:layout_alignTop="@id/buttonCenter"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bottom Parent"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+        <!-- 3. TableLayout Example -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3. TableLayout"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:background="#B2EBF2">
+
+            <TableRow>
+                <TextView
+                    android:text="Name"
+                    android:padding="8dp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:text="Age"
+                    android:padding="8dp"
+                    android:gravity="center"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="John"
+                    android:padding="8dp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:text="25"
+                    android:padding="8dp"
+                    android:gravity="center"/>
+            </TableRow>
+        </TableLayout>
+
+        <!-- 4. FrameLayout Example -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4. FrameLayout"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+
+        <FrameLayout
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="#F8BBD0">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_launcher"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Overlay Text"
+                android:layout_gravity="bottom|center_horizontal"
+                android:textSize="20sp"
+                android:textColor="#FF0000"/>
+        </FrameLayout>
+
+        <!-- 5. GridLayout Example -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5. GridLayout"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:rowCount="2"
+            android:background="#C8E6C9">
+
+            <Button
+                android:text="1"
+                android:layout_row="0"
+                android:layout_column="0"/>
+
+            <Button
+                android:text="2"
+                android:layout_row="0"
+                android:layout_column="1"/>
+
+            <Button
+                android:text="3"
+                android:layout_row="0"
+                android:layout_column="2"/>
+
+            <Button
+                android:text="4"
+                android:layout_row="1"
+                android:layout_columnSpan="3"
+                android:layout_width="match_parent"/>
+        </GridLayout>
+
+        <!-- 6. AbsoluteLayout Example (Deprecated) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="6. AbsoluteLayout (Deprecated)"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+
+        <AbsoluteLayout
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#D1C4E9"
+            tools:ignore="Deprecated">
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="Button 1"
+                android:layout_x="20dp"
+                android:layout_y="30dp"/>
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="Button 2"
+                android:layout_x="150dp"
+                android:layout_y="80dp"/>
+        </AbsoluteLayout>
+
+        <!-- 7. ConstraintLayout Example -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="7. ConstraintLayout"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#BBDEFB">
+
+            <Button
+                android:id="@+id/buttonA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <Button
+                android:id="@+id/buttonB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B"
+                app:layout_constraintStart_toEndOf="@id/buttonA"
+                app:layout_constraintTop_toBottomOf="@id/buttonA"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -9,10 +9,10 @@ This project demonstrates how to create a simple Android form using native Java 
 No Material Design components are used—this is a beginner-friendly tutorial focusing on form handling and intent-based messaging in Android.
 
 ## Features
-* Full Name - EditText input field
-* Date of Birth - EditText input field
-* Gender - RadioButton selection (Male/Female)
-* Address - EditText input field
+* Full Name - ```EditText``` input field
+* Date of Birth - ```EditText``` input field
+* Gender - ```RadioButton``` selection (Male/Female)
+* Address - ```EditText``` input field
 * Submit Button - Sends the form data to WhatsApp
 
 ## Project Structure
@@ -44,7 +44,7 @@ No Material Design components are used—this is a beginner-friendly tutorial fo
 * Android Studio
 * Java (Native Android Development)
 * Explicit & Implicit Intents
-* EditText, RadioButton, Button
+* ```EditText```, ```RadioButton```, ```Button```
 
 
 ## How to Use
