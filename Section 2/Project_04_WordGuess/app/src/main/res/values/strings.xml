@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">WordGuess</string>
+    <string name="enter_your_guess">Enter your guess</string>
+    <string name="submit">Submit</string>
+    <string name="new_word">New Word</string>
+    <string name="wrong_try_again">Wrong! Try again.</string>
+    <string name="correct_well_done">Correct! Well done!</string>
+</resources>
